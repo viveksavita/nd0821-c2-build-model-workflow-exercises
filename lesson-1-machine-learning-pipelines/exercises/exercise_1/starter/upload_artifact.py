@@ -3,7 +3,11 @@ import argparse
 import logging
 import pathlib
 import wandb
+import os
 
+
+
+os.environ["WANDB_START_METHOD"] = "thread"
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
 logger = logging.getLogger()
@@ -15,6 +19,9 @@ def go(args):
 
     # Create a W&B run in the project ``exercise_1``. Set the option ``job_type="upload_file"``:
 
+    run = wandb.init(project = "exercise_1", job_type ="upload_file")
+
+
     # YOUR CODE HERE
 
     # Create an instance of the class ``wandb.Artifact``. Use the ``artifact_name`` parameter to fill
@@ -23,12 +30,24 @@ def go(args):
     # ``type`` and ``description``
     # HINT: you can use args.artifact_name to reference the parameter artifact_name
 
+    artifact = wandb.Artifact(
+        name = args.artifact_name,
+        type = args.artifact_type,
+        description = args.artifact_description,
+        ) 
+
     # YOUR CODE HERE
 
     # Attach the file provided as the parameter ``input_file`` to the artifact instance using
     # ``artifact.add_file``, and log the artifact to the run using ``run.log_artifact``.
 
     # YOUR CODE HERE
+    logger.info("Attaching artifact")
+
+    artifact.add_file(args.input_file)
+    run.log_artifact(artifact)
+    logger.info("Finishing run")
+    run.finish()
 
 
 if __name__ == "__main__":

@@ -1,0 +1,42 @@
+2022-04-17 00:09:26,197 INFO    MainThread:77856 [wandb_setup.py:_flush():75] Loading settings from /Users/viveksavita/.config/wandb/settings
+2022-04-17 00:09:26,198 INFO    MainThread:77856 [wandb_setup.py:_flush():75] Loading settings from /Users/viveksavita/nd0821-c2-build-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/settings
+2022-04-17 00:09:26,198 INFO    MainThread:77856 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-04-17 00:09:26,198 INFO    MainThread:77856 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py', 'program': 'upload_artifact.py'}
+2022-04-17 00:09:26,198 INFO    MainThread:77856 [wandb_init.py:_log_setup():438] Logging user logs to /Users/viveksavita/nd0821-c2-build-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20220417_000926-18hchwlu/logs/debug.log
+2022-04-17 00:09:26,198 INFO    MainThread:77856 [wandb_init.py:_log_setup():439] Logging internal logs to /Users/viveksavita/nd0821-c2-build-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20220417_000926-18hchwlu/logs/debug-internal.log
+2022-04-17 00:09:26,198 INFO    MainThread:77856 [wandb_init.py:init():472] calling init triggers
+2022-04-17 00:09:26,198 INFO    MainThread:77856 [wandb_init.py:init():475] wandb.init called with sweep_config: {}
+config: {}
+2022-04-17 00:09:26,198 INFO    MainThread:77856 [wandb_init.py:init():525] starting backend
+2022-04-17 00:09:26,198 INFO    MainThread:77856 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2022-04-17 00:09:26,219 INFO    MainThread:77856 [backend.py:ensure_launched():219] starting backend process...
+2022-04-17 00:09:26,240 INFO    MainThread:77856 [backend.py:ensure_launched():224] started backend process with pid: 77867
+2022-04-17 00:09:26,242 INFO    MainThread:77856 [wandb_init.py:init():534] backend started and connected
+2022-04-17 00:09:26,246 INFO    MainThread:77856 [wandb_init.py:init():598] updated telemetry
+2022-04-17 00:09:26,279 INFO    MainThread:77856 [wandb_init.py:init():629] communicating run to backend with 30 second timeout
+2022-04-17 00:09:27,615 INFO    MainThread:77856 [wandb_run.py:_on_init():1922] communicating current version
+2022-04-17 00:09:27,709 INFO    MainThread:77856 [wandb_run.py:_on_init():1926] got version response 
+2022-04-17 00:09:27,709 INFO    MainThread:77856 [wandb_init.py:init():660] starting run threads in backend
+2022-04-17 00:09:32,737 INFO    MainThread:77856 [wandb_run.py:_console_start():1896] atexit reg
+2022-04-17 00:09:32,739 INFO    MainThread:77856 [wandb_run.py:_redirect():1769] redirect: SettingsConsole.REDIRECT
+2022-04-17 00:09:32,740 INFO    MainThread:77856 [wandb_run.py:_redirect():1774] Redirecting console.
+2022-04-17 00:09:32,743 INFO    MainThread:77856 [wandb_run.py:_redirect():1830] Redirects installed.
+2022-04-17 00:09:32,757 ERROR   MainThread:77856 [wandb_init.py:init():1023] error
+Traceback (most recent call last):
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 996, in init
+    run = wi.init()
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 684, in init
+    run._on_start()
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1945, in _on_start
+    self._on_ready()
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1960, in _on_ready
+    self._telemetry_flush()
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 582, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 73, in _publish_telemetry
+    self._publish(rec)
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface_queue.py", line 49, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+2022-04-17 00:09:34,768 INFO    MainThread:77856 [wandb_run.py:_atexit_cleanup():1865] got exitcode: 1
+2022-04-17 00:09:34,770 INFO    MainThread:77856 [wandb_run.py:_restore():1837] restore

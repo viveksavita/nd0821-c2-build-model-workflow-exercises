@@ -1,0 +1,18 @@
+2022-04-17 00:20:40,046 INFO    BackendThr:79095 [internal.py:wandb_internal():92] W&B internal server running at pid: 79095, started at: 2022-04-17 00:20:40.045741
+2022-04-17 00:20:40,047 INFO    MainThread:79095 [wandb_init.py:init():534] backend started and connected
+2022-04-17 00:20:40,049 DEBUG   MainThread:79095 [config_util.py:dict_from_config_file():102] no default config file found in config-defaults.yaml
+2022-04-17 00:20:40,053 INFO    MainThread:79095 [wandb_init.py:init():598] updated telemetry
+2022-04-17 00:20:40,055 INFO    WriterThread:79095 [datastore.py:open_for_write():77] open: /Users/viveksavita/nd0821-c2-build-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20220417_002040-q40ol6l1/run-q40ol6l1.wandb
+2022-04-17 00:20:40,056 DEBUG   SenderThread:79095 [sender.py:send():235] send: header
+2022-04-17 00:20:40,084 INFO    MainThread:79095 [wandb_init.py:init():629] communicating run to backend with 30 second timeout
+2022-04-17 00:20:40,085 DEBUG   SenderThread:79095 [sender.py:send():235] send: run
+2022-04-17 00:20:40,280 INFO    MainThread:79095 [wandb_run.py:_on_init():1922] communicating current version
+2022-04-17 00:20:40,281 DEBUG   HandlerThread:79095 [handler.py:handle_request():141] handle_request: check_version
+2022-04-17 00:20:40,291 INFO    SenderThread:79095 [dir_watcher.py:__init__():169] watching files in: /Users/viveksavita/nd0821-c2-build-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20220417_002040-q40ol6l1/files
+2022-04-17 00:20:40,291 INFO    SenderThread:79095 [sender.py:_start_run_threads():812] run started: q40ol6l1 with start time 1650151240
+2022-04-17 00:20:40,291 DEBUG   SenderThread:79095 [sender.py:send():235] send: summary
+2022-04-17 00:20:40,291 INFO    SenderThread:79095 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-17 00:20:40,292 DEBUG   SenderThread:79095 [sender.py:send_request():249] send_request: check_version
+2022-04-17 00:20:40,380 INFO    MainThread:79095 [wandb_run.py:_on_init():1926] got version response 
+2022-04-17 00:20:40,380 INFO    MainThread:79095 [wandb_init.py:init():660] starting run threads in backend
+2022-04-17 00:20:40,381 DEBUG   HandlerThread:79095 [handler.py:handle_request():141] handle_request: run_start

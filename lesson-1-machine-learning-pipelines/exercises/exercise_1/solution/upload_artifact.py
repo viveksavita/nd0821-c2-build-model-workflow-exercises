@@ -3,7 +3,11 @@ import argparse
 import logging
 import pathlib
 import wandb
+import os
 
+
+
+os.environ["WANDB_START_METHOD"] = "thread"
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
 logger = logging.getLogger()
@@ -24,6 +28,7 @@ def go(args):
 
     logger.info("Logging artifact")
     run.log_artifact(artifact)
+    run.finish()
 
 
 if __name__ == "__main__":

@@ -1,0 +1,11 @@
+2022-04-17 00:03:36,907 INFO    MainThread:77215 [internal.py:wandb_internal():92] W&B internal server running at pid: 77215, started at: 2022-04-17 00:03:36.907141
+2022-04-17 00:03:36,908 INFO    WriterThread:77215 [datastore.py:open_for_write():77] open: /Users/viveksavita/nd0821-c2-build-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20220417_000335-31oky4my/run-31oky4my.wandb
+2022-04-17 00:03:36,909 DEBUG   SenderThread:77215 [sender.py:send():235] send: header
+2022-04-17 00:03:36,909 DEBUG   SenderThread:77215 [sender.py:send():235] send: run
+2022-04-17 00:03:37,159 DEBUG   HandlerThread:77215 [handler.py:handle_request():141] handle_request: check_version
+2022-04-17 00:03:37,168 INFO    SenderThread:77215 [dir_watcher.py:__init__():169] watching files in: /Users/viveksavita/nd0821-c2-build-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20220417_000335-31oky4my/files
+2022-04-17 00:03:37,168 INFO    SenderThread:77215 [sender.py:_start_run_threads():812] run started: 31oky4my with start time 1650150215
+2022-04-17 00:03:37,168 DEBUG   SenderThread:77215 [sender.py:send():235] send: summary
+2022-04-17 00:03:37,168 INFO    SenderThread:77215 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-17 00:03:37,168 DEBUG   SenderThread:77215 [sender.py:send_request():249] send_request: check_version
+2022-04-17 00:03:37,341 DEBUG   HandlerThread:77215 [handler.py:handle_request():141] handle_request: run_start

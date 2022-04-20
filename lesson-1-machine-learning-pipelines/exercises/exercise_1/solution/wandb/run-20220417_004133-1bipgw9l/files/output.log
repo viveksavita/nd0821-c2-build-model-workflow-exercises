@@ -1,0 +1,62 @@
+
+Problem at: upload_artifact.py 15 go
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 114, in communicate_stop_status
+    resp = self._communicate_network_status(status)
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 404, in _communicate_network_status
+    resp = self._communicate_stop_status(status)
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 394, in _communicate_stop_status
+    resp = self._communicate(req, local=True)
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 225, in _communicate
+    resp = self._communicate(req, local=True)
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 225, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 230, in _communicate_async
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 230, in _communicate_async
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+Traceback (most recent call last):
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 996, in init
+    run = wi.init()
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 684, in init
+    run._on_start()
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1945, in _on_start
+    self._on_ready()
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1960, in _on_ready
+    self._telemetry_flush()
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 582, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 73, in _publish_telemetry
+    self._publish(rec)
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface_queue.py", line 49, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Abnormal program exit
+Traceback (most recent call last):
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 996, in init
+    run = wi.init()
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 684, in init
+    run._on_start()
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1945, in _on_start
+    self._on_ready()
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1960, in _on_ready
+    self._telemetry_flush()
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 582, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 73, in _publish_telemetry
+    self._publish(rec)
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface_queue.py", line 49, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "upload_artifact.py", line 55, in <module>
+    go(args)
+  File "upload_artifact.py", line 15, in go
+    run = wandb.init(project="exercise_1", job_type="upload_file")
+  File "/Users/viveksavita/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1034, in init
+    six.raise_from(Exception("problem"), error_seen)
+  File "<string>", line 3, in raise_from
+Exception: problem

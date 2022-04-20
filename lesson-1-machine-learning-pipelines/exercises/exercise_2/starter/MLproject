@@ -1,0 +1,20 @@
+name: download_data.py
+conda_ env: conda.yml
+
+
+entry_points:
+	parameters:
+		file_url:
+			description: URL of the file
+			type:uri
+		artifact_name:
+			description: Name of the artifact
+			type: str
+		artifact_type:
+			description: Type of the artifact
+			type: str
+			default :raw_data.txt
+		artifact_description:
+			description: Description of the artifact
+			type: str
+			
