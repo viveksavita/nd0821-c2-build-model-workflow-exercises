@@ -1,0 +1,31 @@
+{
+    "os": "macOS-12.3.1-arm64-arm-64bit",
+    "python": "3.9.12",
+    "heartbeatAt": "2022-04-21T13:28:49.226535",
+    "startedAt": "2022-04-21T13:28:48.417518",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--input_artifact",
+        "iris.csv:latest",
+        "--artifact_name",
+        "cleaned_data.csv",
+        "--artifact_type",
+        "cleaned_data",
+        "--artifact_description",
+        "processed data"
+    ],
+    "state": "running",
+    "program": "/Users/viveksavita/Additional/nd0821-c2-build-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/run.py",
+    "codePath": "lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/run.py",
+    "git": {
+        "remote": "https://github.com/udacity/nd0821-c2-build-model-workflow-exercises.git",
+        "commit": "31cb524fedffde3aa82ee07fdaa324d32d391e55"
+    },
+    "email": null,
+    "root": "/Users/viveksavita/Additional/nd0821-c2-build-model-workflow-exercises",
+    "host": "192.168.1.103",
+    "username": "viveksavita",
+    "executable": "/Users/viveksavita/miniforge3/envs/mlflow-b8613a830367d79bf2c2499bd3d120f441faca41/bin/python"
+}

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/viveksavita/Additional/nd0821-c2-build-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/mlruns/0/e79a463a4ef74f7cb6326c553d68a41c/artifacts
+end_time: 1650547680239
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: e79a463a4ef74f7cb6326c553d68a41c
+run_uuid: e79a463a4ef74f7cb6326c553d68a41c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1650547674334
+status: 3
+tags: []
+user_id: viveksavita
