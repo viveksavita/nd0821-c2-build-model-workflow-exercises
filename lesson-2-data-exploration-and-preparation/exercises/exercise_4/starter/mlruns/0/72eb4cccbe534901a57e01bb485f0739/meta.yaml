@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/viveksavita/Additional/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/mlruns/0/72eb4cccbe534901a57e01bb485f0739/artifacts
+end_time: 1650551265246
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 72eb4cccbe534901a57e01bb485f0739
+run_uuid: 72eb4cccbe534901a57e01bb485f0739
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1650551244043
+status: 4
+tags: []
+user_id: viveksavita

@@ -1,0 +1,31 @@
+{
+    "os": "macOS-12.3.1-arm64-arm-64bit",
+    "python": "3.9.12",
+    "heartbeatAt": "2022-04-21T14:19:44.614363",
+    "startedAt": "2022-04-21T14:19:36.165281",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "artifact",
+        "put",
+        "--name",
+        "exercise_4/genres_mod.parquet",
+        "--type",
+        "raw_data",
+        "--description",
+        "A modified version of the songs dataset",
+        "genres_mod.parquet"
+    ],
+    "state": "running",
+    "program": "/Users/viveksavita/miniforge3/envs/udacity/bin/wandb",
+    "git": {
+        "remote": "https://github.com/udacity/nd0821-c2-build-model-workflow-exercises.git",
+        "commit": "2a912ee7424569a89de0967fe581cd3e846ef3fc"
+    },
+    "email": null,
+    "root": "/Users/viveksavita/Additional/nd0821-c2-build-model-workflow-exercises",
+    "host": "192.168.1.103",
+    "username": "viveksavita",
+    "executable": "/Users/viveksavita/miniforge3/envs/udacity/bin/python"
+}

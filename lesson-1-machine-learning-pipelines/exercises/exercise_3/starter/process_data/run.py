@@ -16,6 +16,8 @@ def go(args):
     run = wandb.init(job_type="process_data")
 
     logger.info("Downloading artifact")
+
+    
     artifact = run.use_artifact(args.input_artifact)
     artifact_path = artifact.file()
 
@@ -29,7 +31,10 @@ def go(args):
     iris["target"] = [target_names[k] for k in iris["target"]]
 
     logger.info("Performing t-SNE")
+
+
     tsne = TSNE(n_components=2, init="pca", random_state=0)
+
     transf = tsne.fit_transform(iris.iloc[:, :4])
 
     iris["tsne_1"] = transf[:, 0]

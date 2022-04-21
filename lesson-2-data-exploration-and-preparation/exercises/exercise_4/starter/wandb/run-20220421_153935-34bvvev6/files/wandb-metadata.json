@@ -1,0 +1,24 @@
+{
+    "os": "macOS-12.3.1-arm64-arm-64bit",
+    "python": "3.9.12",
+    "heartbeatAt": "2022-04-21T14:39:36.372292",
+    "startedAt": "2022-04-21T14:39:35.518358",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/Users/viveksavita/Library/Jupyter/runtime/kernel-8f32d5c3-aeed-429a-a6f9-66a453f46e77.json"
+    ],
+    "state": "running",
+    "program": "EDA.ipynb",
+    "root": "/Users/viveksavita/Additional/nd0821-c2-build-model-workflow-exercises",
+    "git": {
+        "remote": "https://github.com/udacity/nd0821-c2-build-model-workflow-exercises.git",
+        "commit": "2a912ee7424569a89de0967fe581cd3e846ef3fc"
+    },
+    "email": null,
+    "host": "192.168.1.103",
+    "username": "viveksavita",
+    "executable": "/Users/viveksavita/miniforge3/envs/mlflow-6a43dadea10d983e4f1db1014c3397703a144662/bin/python"
+}

@@ -1,0 +1,67 @@
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/run.py b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/run.py
+index c7ad9da..11213a0 100755
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/run.py
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/run.py
+@@ -16,6 +16,8 @@ def go(args):
+     run = wandb.init(job_type="process_data")
+ 
+     logger.info("Downloading artifact")
++
++    
+     artifact = run.use_artifact(args.input_artifact)
+     artifact_path = artifact.file()
+ 
+@@ -29,7 +31,10 @@ def go(args):
+     iris["target"] = [target_names[k] for k in iris["target"]]
+ 
+     logger.info("Performing t-SNE")
++
++
+     tsne = TSNE(n_components=2, init="pca", random_state=0)
++
+     transf = tsne.fit_transform(iris.iloc[:, :4])
+ 
+     iris["tsne_1"] = transf[:, 0]
+diff --git a/lesson-2-data-exploration-and-preparation/exercises/exercise_4/solution/conda.yml b/lesson-2-data-exploration-and-preparation/exercises/exercise_4/solution/conda.yml
+index f216511..cc9d395 100755
+--- a/lesson-2-data-exploration-and-preparation/exercises/exercise_4/solution/conda.yml
++++ b/lesson-2-data-exploration-and-preparation/exercises/exercise_4/solution/conda.yml
+@@ -7,7 +7,8 @@ dependencies:
+   - seaborn=0.11.1
+   - pandas=1.2.3
+   - pip=20.3.3
+-  - pandas-profiling=2.11.0
++  - pandas-profiling=3.1.0
+   - pyarrow=2.0
++  - jinja2==3.1.1
+   - pip:
+       - wandb==0.10.21
+\ No newline at end of file
+diff --git a/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject b/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject
+index e69de29..71bbf66 100755
+--- a/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject
++++ b/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject
+@@ -0,0 +1,7 @@
++name: download_data
++conda_env: conda.yml
++
++entry_points:
++  main:
++    command: >-
++      jupyter notebook
+\ No newline at end of file
+diff --git a/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml b/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml
+index f216511..cc9d395 100755
+--- a/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml
++++ b/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml
+@@ -7,7 +7,8 @@ dependencies:
+   - seaborn=0.11.1
+   - pandas=1.2.3
+   - pip=20.3.3
+-  - pandas-profiling=2.11.0
++  - pandas-profiling=3.1.0
+   - pyarrow=2.0
++  - jinja2==3.1.1
+   - pip:
+       - wandb==0.10.21
+\ No newline at end of file
